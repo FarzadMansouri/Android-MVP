@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:elevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_cat"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/ic_image_black_24dp"
+            android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:id="@+id/name_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_cat"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000"
+            tools:text="test name " />
+
+        <TextView
+            android:id="@+id/vote_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_movie"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="vote count : " />
+
+
+        <TextView
+            android:id="@+id/vote_count_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_below="@id/image_cat"
+            android:layout_alignBottom="@id/vote_movie"
+            android:layout_alignTop="@id/vote_movie"
+            android:layout_toEndOf="@+id/vote_movie"
+            android:layout_toRightOf="@+id/vote_movie"
+            android:textColor="#F44336"
+            tools:text="movieee" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="language : "
+            android:layout_below="@id/vote_movie"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/language"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lan_movie"
+            android:textColor="#726E6E"
+            android:text="bdbddbd"
+            android:layout_alignTop="@id/language"
+            android:layout_alignBottom="@id/language"
+            android:layout_toEndOf="@id/language"
+            android:layout_toRightOf="@id/language"
+
+            />
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/progress"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
