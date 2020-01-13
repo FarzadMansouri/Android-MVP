@@ -20,7 +20,7 @@ public class RetroClass {
     private Context mContext;
     public static  String BaseUrl="http://api.themoviedb.org/3/";
     public static String TAG="TRACE";
-    public static String Api_key="aeeee77f8ad530567607297cfb99fbd0";
+    public static String Api_key="";
 
 
     public static Retrofit getmRetrofit(String address) {
